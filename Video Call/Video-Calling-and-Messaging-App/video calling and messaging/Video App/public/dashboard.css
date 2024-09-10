@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.hide{
+  visibility: hidden;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#nodisplay{
+  display: none;
+}
+.main-left {
+  width: 50vw;
+  height: 100vh;
+}
+.main-right {
+  height: 100vh;
+  width: 50vw;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-right .pattern {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.main-right .right-img {
+  width: 30vw;
+  margin-bottom: 10vh;
+}
+.title {
+  position: fixed;
+  top: 20px;
+  left: 60px;
+}
+.main-left {
+  display: flex;
+  align-items: center;
+}
+.main-left-content {
+  margin-left: 60px;
+  width: 40vw;
+  max-width: 600px;
+}
+.main-left-content p {
+  color:black;
+  font-size: 40px;
+}
+.main-left-content h3 {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 200;
+  font-size: 72px;
+}
+#input-name{
+  width: 20vw;
+  max-width: 400px;
+  min-width: 200px;
+  background-image: linear-gradient(90deg, #3f79dc, #5ab4e8);
+  color: white;
+  border: none;
+  font-size: 25px;
+  
+  margin-right: 10px;
+  height: fit-content;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+#input-name::placeholder{
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 300;
+}
+.form {
+  width: 35vw;
+  max-width: 400px;
+  min-width: 200px;
+  background-image: linear-gradient(90deg, #3f79dc, #5ab4e8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-top: 20px;
+  border-radius: 22px;
+}
+.form input {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  margin-right: 10px;
+}
+*:focus {
+  outline: none;
+}
+.form input::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 300;
+}
+button {
+  background-color: white;
+  color: #333333;
+  border-radius: 22px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+button:hover {
+  box-shadow: 8px 8px 6px hsla(0, 0%, 0%, 0.082);
+  transform: scale(0.9);
+}

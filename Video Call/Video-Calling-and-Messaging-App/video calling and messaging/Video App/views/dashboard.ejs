@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mulaqat</title>
+    <link rel="stylesheet" href="/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Mulaqat"
+        agent-id="dc8cc263-7cb6-4faf-b7f7-93c79a1caee9"
+        language-code="en"
+    ></df-messenger>
+  </head>
+  <body>
+    <h2 class="title">Mulaqat</h2>
+    <div class="main">
+      <div class="main-left">
+        <div class="main-left-content">
+          <h3>Connect Now!</h3>
+          <input type="text" id="input-name" placeholder="Enter display name" required><br><br>
+          <button class="btn" id="join"onclick="hideIt()">Join Meeting</button>
+          <button class="btn" onclick="redir()">Create Meeting</button>
+          <div id="form" class="form hide">
+            <input
+              type="text"
+              name="room"
+              placeholder="Room name..."
+              required
+              autocomplete="off"
+              id="input"
+              />
+            <button onclick="joinIt()">Join a meeting</button>
+          </div>
+        </div>
+      </div>
+      <div class="main-right">
+        <img src="/assets/home-pattern@2x.png" class="pattern" />
+        <img src="/assets/landing-photo@2x.png" class="right-img" />
+      </div>
+    </div>
+  <script src="/dashboard.js"></script>
+  </body>
+</html>
